@@ -1,0 +1,22 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+div#editor {
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 99vh;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.files-list {
+    height: 99vh;
+}

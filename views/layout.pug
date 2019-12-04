@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+        link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/vex-js/4.1.0/css/vex.min.css')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/vex-js/4.1.0/css/vex-theme-os.min.css')
+        script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js')
+        script(src="https://unpkg.com/codeflask/build/codeflask.min.js")
+        script(src='//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/vex-js/4.1.0/js/vex.combined.min.js')
+    body
+        div(class="main-menu")
+            a(href='/') Home
+        hr
+        block content

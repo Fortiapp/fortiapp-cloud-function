@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    script(type="text/javascript").
+        let appId = "#{app}";
+    h1= title
+    div(class="container-fluid")
+        p trigger:
+            a(id="trigger",target="_blank")
+        div(class="row")
+            div(class="col-sm-2")
+                ul(class="list-group list-group-flush files-list")
+                    each file in files
+                        li(class="list-group-item link", onclick="load('" + app + "','" + file + "')") #{file}
+            div(class="col-sm-10")
+                div(class="actions mb-2")
+                    button(class="btn btn-secondary",onclick="create()") New
+                    button(class="btn btn-primary",onclick="save()") Save
+                div(id="editor")
+    script(src="/javascripts/editor.js")
+

@@ -1,0 +1,17 @@
+{
+  "name": "project_boilerplate",
+  "version": "1.0.0",
+  "description": "function app",
+  "main": "index.js",
+  "repository": "",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "js-meter": "^1.1.4"
+  }
+}

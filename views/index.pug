@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to #{title}
+    ul
+        each app in apps
+            a(href='/app/' + app)
+                li=app
+    form(method="GET",action="/app/create")
+        label Application name:
+        input(type="text",placeholder="App name", name="name")
+        button(type="submit") Create
