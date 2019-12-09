@@ -22,7 +22,7 @@ var app = express();
 var redis = require("redis"),
     client = redis.createClient({
         host: "localhost",
-        port: 32768
+        port: 32770
     });
 const getAsync = promisify(client.get).bind(client);
 
